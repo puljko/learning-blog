@@ -97,9 +97,53 @@ main h1 {
 }
 
 main p {
-text-align: center;
-padding: 0% 15% 15% 15%;
-color: grey;
+  line-height: 25px;
+  text-align: center;
+  padding: 0% 15% 5% 15%;
+  color: grey;
+}
+
+.post_list {
+  text-align: center;
+  list-style: none;
+  width: 25%;
+  float:left;
+  padding-bottom: 5%;
+}
+
+.post_list h1 {
+margin: 0;
+padding-top: 5%;
+}
+
+.post_list p {
+  padding: 0;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.post_list:not(:last-child)s
+{padding-right: 10%;
+}
+
+
+.gallery {
+  display: inline;
+  margin-top: 100px;
+  list-style: none;
 
 }
 
+.gallery li img{
+width: 470px;
+}
+
+.left {
+  float: left;
+  padding-bottom: 5%;
+}
+
+.right {
+  float:right;
+  padding-bottom: 5%;
+}
