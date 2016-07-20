@@ -3,15 +3,12 @@ body{
   margin: 0;
 }
 
-
-
 .container {
-margin: auto;
-width: 80%;
-position: relative;
-height: 100%
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  height: 100%
 }
-
 
 header{
   position: relative;
@@ -22,67 +19,87 @@ header{
   background-image: url(banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center 100%;
 }
 
+nav ul{
+  margin: 0;
+}
 
 nav ul li{
-list-style: none;
-padding-right: 25px;
-list-style: none;
-display: inline;
-color:white;
+  font-family: ;
+  list-style: none;
+  padding-right: 25px;
+  list-style: none;
+  display: inline;
+  color:white;
+  margin: 0;
 }
 
 nav ul li a {
-text-decoration: none;
-color:white;
+  text-decoration: none;
+  color:white;
 }
 
 nav ul li a:hover{
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav ul li a:active{
-text-decoration: none;
-color: green;
+  text-decoration: none;
+  color: rgb(27, 188, 155);
 }
 
 nav ul li:not(:first-child){
-float: right;
+  float: right;
 }
 
 .promo {
-  position: absolute;
-  padding-left: 25%;
-  padding-top: 15%;
+  margin: auto 15%;
+  padding-top:15%;
   text-align: center;
-  width: 50%;
-
-  color: white;
+  color: rgb(255, 255, 255);
+  width: auto;
 }
 
-header hr {
- margin:-10px;
+  header h1 {
+  font-size: 50px;
+  margin: 10px;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
 }
 
-input{
-position: absolute;
-margin-left: 45%;
-margin-bottom: 0;
-bottom: 5px;
-background-color: green;
-text-align: center;
-color: white;
-padding: 5px;
-font-size: 16px;
-/*box shadow*/
-
+header button{
+  position: absolute;
+  bottom: -20px;
+  left :0;
+  right: 0;
+  margin:0 auto;
+  background-color: rgb(27, 188, 155);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px;
+  font-size: 16px;
+  width: 20%;
 }
 
 main {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin:0;
 }
+
 main h1 {
-  color:black;
+  padding-top: 10%;
+  color:rgb(27, 188, 155);
+  text-align: center;
+
 }
+
+main p {
+text-align: center;
+padding: 0% 15% 15% 15%;
+color: grey;
+
+}
+
