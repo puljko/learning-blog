@@ -6,11 +6,19 @@
 	<title>Blog template</title>
 </head>
 <body>
+<!-- ------------------------------------------------
+Uvijek je dobro napraviti jedan indent koda kad su djeca u pitanju.
+Cak i razdvojiti jednim praznim redom i/ili cak ostaviti komentar koji oznacava pocetak/kraj sekcije
+------------------------------------------------ -->
 <header>
 <div class="container">
   <nav>
     <ul>
     <li>LOGO</li>
+    <!-- ------------------------------------------------
+    U principu nikada ne pises capsanim slovima, to se napravi CSS-om: text-transform: uppercase;
+    Ukoliko se npr odlucis kasnije imat sve mala slova, ili normalna da budu, uvijek mozes CSS-om to korigirat.
+    ------------------------------------------------ -->
     <li><a href="#">START</a></li>
     <li><a href="#">ABOUT ME</a></li>
     <li><a href="#">WORK</a></li>
@@ -19,9 +27,17 @@
   </nav>
   <div class="promo">
     <h1>May I intreduce myself?</h1>
+    <!-- ------------------------------------------------
+    Headingsi (h1,h2,h3,h4,h5,h6) bi se trebali pravilno istim redoslijedom listat.
+    Tako ako si tu naveo H1 onda iduci je H2. Imaj na umu isto tako da font-size nema veze sa redoslijedom.
+    U smislu, h1 moze npr biti najmanji font-size, a h4 najveci...
+    ------------------------------------------------ -->
     <h3>Frontent Design and | UX/UI Design </h3>
   </div>
-
+    <!-- ------------------------------------------------
+    Neke atribute je bolje ne navodit ako ne znas sta rade, kao npr ovaj "type" za button.
+    Uostalom u tvom slucaju je to nebitno, pa ga ne moras ni navodit.
+    ------------------------------------------------ -->
     <button id="button" type="Go">GO AHEAD</button>
   </div>
 </div>
@@ -32,30 +48,35 @@
   <h1>BRUCE LEE</h1>
   <p> Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. Chupa chups biscuit sugar plum pastry sweet jelly-o I love soufflé lollipop. Pudding jelly beans I love jelly tart lemon drops toffee. Candy canes tiramisu lollipop I love pastry candy canes.</p>
   <div class="post">
-<ul>
-  <li class="post_list">
-    <article>
-      <img src="sketch.png" alt="sketch">
-      <h1>Sketching is fun</h1>
-      <p>Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. <p>
-      </article>
-   </li>
-   <li class="post_list">
-      <article>
-        <img src="design.png" alt="design">
-        <h1>Design  afterwards</h1>
-        <p>Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. <p>
-      </article>
-    </li>
-    <li class="post_list">
-      <article>
-      <img src="finalize.png" alt="final">
-      <h1>Finalize</h1>
-      <p>Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. <p>
-      </article>
-    </li>
-  </ul>
+    <ul>
+      <li class="post_list">
+        <article>
+          <img src="sketch.png" alt="sketch">
+          <h1>Sketching is fun</h1>
+          <p>Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. <p>
+          </article>
+       </li>
+       <li class="post_list">
+          <article>
+            <img src="design.png" alt="design">
+            <h1>Design  afterwards</h1>
+            <p>Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. <p>
+          </article>
+        </li>
+        <li class="post_list">
+          <article>
+            <img src="finalize.png" alt="final">
+            <h1>Finalize</h1>
+            <p>Sweet roll donut I love cake I love tootsie roll. Marzipan wafer chocolate gingerbread cheesecake I love I love. Cake ice cream tootsie roll I love I love sugar plum chupa chups chocolate bar pie. Bear claw chocolate sweet roll caramels caramels liquorice lollipop candy canes jelly. <p>
+          </article>
+        </li>
+    </ul>
   </div>
+
+<!-- ------------------------------------------------
+Nemozes ovako razbijat u 2 liste razlicite galeriju.
+Mora biti jedna lista. -Zatim bi trebao CSS-om podijeliti ih prema dizajnu.
+------------------------------------------------ -->
 <ul class="gallery">
   <li> <img class="left" src="pic.jpg"> </li>
   <li> <img class="right"  src="pic.jpg"> </li>
