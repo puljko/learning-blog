@@ -1,38 +1,42 @@
 
 body{
-  margin: 0;
+  margin: 0; /*zasto si ovo naveo? :D*/
 }
 
 .container {
   margin: auto;
   padding: 0;
-  width: 80%;
+  width: 80%; /* sirinu stranice obicno definiramo pixelima, tipa 1200px ili nesto */
   height: 100%
 }
 
+/* uvijek je bolje da targetiras klasu a ne direktno element,
+jer mozemo mozda od tog headera napravit section ili nesto (isto vrijedi za vecinu ostalog CSS-a dolje) */
 header{
   position: relative;
   margin-top: 0px;
   padding-top: 20px;
-  width: 100%;
+  width: 100%; /* mislim da ti ovo ne treba, header ima definiran block, pa mislim da time uzima odmah full width */
   height: 600px;
-  background-image: url(banner.jpg);
+  background-image: url(banner.jpg); /* uvijek u navodnike stavi putanju */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 100%;
+  background-position: center 100%; /* mislim da ti je ovdje samo "center" dovoljno */
 }
 
 nav ul{
   margin: 0;
 }
 
+/*ovo su ti sad generalni stilovi za sve list elemente, sto naravno nikad ne zelimo,
+zato moras imat klase i globalno samo definirati potrebno*/
 nav ul li{
-  font-family: ;
+  font-family: ; /* ako neces definirat makni, ne ostavljaj nikada ovako */
   list-style: none;
   padding-right: 25px;
-  list-style: none;
-  display: inline;
-  color:white;
+  list-style: none; /* duplikat */
+  display: inline; /* tesko da je inline propert potreban */
+  color:white; /* uvijek preferiraj hex ili rgb boju */
   margin: 0;
 }
 
@@ -105,7 +109,7 @@ main p {
 
 .post_list {
   text-align: center;
-  list-style: none;
+  list-style: none; /* vidis ovdje ponavljas ono sta si genralno definirao za ul li */
   width: 25%;
   float:left;
   padding-bottom: 5%;
@@ -122,7 +126,7 @@ padding-top: 5%;
   text-align: justify;
 }
 
-.post_list:not(:last-child)s
+.post_list:not(:last-child)s /* typo */
 {padding-right: 10%;
 }
 
