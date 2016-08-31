@@ -1,25 +1,19 @@
-
-body{
-  margin: 0;
-}
-
 .container {
   margin: auto;
   padding: 0;
   width: 80%;
-  height: 100%
 }
+
 
 header{
   position: relative;
   margin-top: 0px;
   padding-top: 20px;
-  width: 100%;
   height: 600px;
-  background-image: url(banner.jpg);
+  background-image: url('Images/banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 100%;
+  background-position: center;
 }
 
 nav ul{
@@ -27,18 +21,16 @@ nav ul{
 }
 
 nav ul li{
-  font-family: ;
   list-style: none;
   padding-right: 25px;
-  list-style: none;
   display: inline;
-  color:white;
+  color:rgb(255, 255, 255);
   margin: 0;
 }
 
 nav ul li a {
   text-decoration: none;
-  color:white;
+  color:rgb(255, 255, 255);
 }
 
 nav ul li a:hover{
@@ -62,11 +54,16 @@ nav ul li:not(:first-child){
   width: auto;
 }
 
-  header h1 {
+header h1 {
   font-size: 50px;
   margin: 10px;
   border-bottom: 1px solid white;
   padding-bottom: 10px;
+}
+
+header h2 {
+  font-size: 20px;
+  padding-top: 3px;
 }
 
 header button{
@@ -90,9 +87,12 @@ main {
 }
 
 main h1 {
-  padding-top: 10%;
-  color:rgb(27, 188, 155);
-  text-align: center;
+padding-top: 10%;
+color: rgb(27, 188, 155);
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 20px;
 
 }
 
@@ -100,20 +100,22 @@ main p {
   line-height: 25px;
   text-align: center;
   padding: 0% 15% 5% 15%;
-  color: grey;
+  color: rgb(128, 128, 128);
 }
 
 .post_list {
   text-align: center;
   list-style: none;
-  width: 25%;
+  width: 30%;
   float:left;
-  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .post_list h1 {
-margin: 0;
-padding-top: 5%;
+  font-size: 20px;
+  margin: 0;
+  padding: 5%;
+  font-weight: bold;
 }
 
 .post_list p {
@@ -122,8 +124,8 @@ padding-top: 5%;
   text-align: justify;
 }
 
-.post_list:not(:last-child)s
-{padding-right: 10%;
+.post_list:not(:last-child){
+  margin-right: 5%;
 }
 
 
@@ -135,7 +137,7 @@ padding-top: 5%;
 }
 
 .gallery li img{
-width: 470px;
+  width: 470px;
 }
 
 .left {
@@ -146,4 +148,12 @@ width: 470px;
 .right {
   float:right;
   padding-bottom: 5%;
+}
+
+.image_wrapper {
+position: relative;
+}
+
+.image_text{
+position: absolute;
 }
