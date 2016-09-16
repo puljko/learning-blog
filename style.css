@@ -1,18 +1,33 @@
+/*-------------------------------------------------------------------------------
+                            1. BASIC ELEMENTS
+--------------------------------------------------------------------------------*/
+
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+.clearfix:before,
+.clearfix:after{
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
 .container {
   margin: auto;
   width: 80%;
 }
 
 
-header{
-  position: relative;
-  padding-top: 20px;
-  height: 600px;
-  background-image: url('Images/banner.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+/*-------------------------------------------------------------------------------
+                            3. NAVIGATION ELEMENTS
+-------------------------------------------------------------------------------*/
 
 nav ul li{
   text-transform: uppercase;
@@ -38,6 +53,21 @@ nav ul li a:active{
 
 nav ul li:not(:first-child){
   float: right;
+}
+
+
+/*-------------------------------------------------------------------------------
+                            3. HEADER ELEMENTS
+-------------------------------------------------------------------------------*/
+
+header{
+  position: relative;
+  padding-top: 20px;
+  height: 600px;
+  background-image: url('Images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .promo {
@@ -79,6 +109,11 @@ header button{
   background-clip: padding-box;
 }
 
+
+/*-------------------------------------------------------------------------------
+                            4. MAIN ELEMENTS
+-------------------------------------------------------------------------------*/
+
 main {
   background-color: rgb(255, 255, 255);
 }
@@ -100,10 +135,6 @@ main p {
   color: rgb(128, 128, 128);
 }
 
-
-.clear{
-clear: both;
-}
 
 .post_list {
   text-align: center;
@@ -130,41 +161,20 @@ clear: both;
 }
 
 .view_more {
-  position: relative;
-  width: 100%;
-  margin-bottom: 150px;
+  margin: auto;
+  width: 25%;
+  height: 60px;
 }
 
-main button{
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 10px;
-
+.view_more button{
   background-color: rgb(27, 188, 155);
-  text-align: center;
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
-  width: 20%;
+  width: 100%;
+  height: 100%;
   border: solid;
- }
-
-.contact_message{
-  color: rgb(27, 188, 155);
-  font-size: 25px;
-  margin: 0 0 130px 0;
-  padding: 0;
-  color: rgb(27, 188, 155);
-  text-align: center;
-  font-weight: bold;
-}
-
-.contact_form{
-  position: relative;
-
 }
 
 .line {
@@ -172,4 +182,55 @@ main button{
   width: 100%;
   background-color: rgba(225, 224, 224, 0.7);
   margin: 80px 0;
+}
+
+
+/*-------------------------------------------------------------------------------
+                            4. CONTACT ELEMENTS
+-------------------------------------------------------------------------------*/
+
+.contact_message{
+  color: rgb(27, 188, 155);
+  font-size: 50px;
+  margin: 0 0 50px 0;
+  padding: 0;
+  color: rgb(27, 188, 155);
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact_form{
+  width:70%;
+  margin:auto;
+  padding: 0 -5px;
+}
+
+.contact_form input{
+  float: left;
+  background-color: rgb(228, 232, 233);
+  font-family: 'Courier New';
+  color: rgb(205, 205, 205);
+  font-size: 30px;
+  font-weight: bold;
+  width:45%;
+  height: 60px;
+  border: none;
+  padding-left: 30px;
+  margin: 0 5px 20px;
+
+}
+
+
+.contact_form textarea{
+  background-color: rgb(228, 232, 233);
+  color: rgb(205, 205, 205);
+  width: 100%;
+  border: none;
+  font-family: 'Courier New';
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 10px;
+
 }

@@ -1,58 +1,73 @@
+
+/*-------------------------------------------------------------------------------
+                            GALLERY DISPLATY
+--------------------------------------------------------------------------------*/
+
 .gallery{
-  margin-bottom: 30px;
+  margin: 0 -5em 3em;
+}
+
+.gallery_item{
+  width:50%;
+  height:300px;
+  list-style: none;
+  z-index: 1;
+  padding: 0 5em;
+  position: relative;
+  float: left;
+ }
+
+.gallery_item:nth-child(n+3) {
+      margin-top: 2em;
+  }
+
+.wrapper{
+  width: 100%;
+  height: auto;
   position: relative;
 }
 
-.right{
-  float: right;
-  margin: 0 0 50px 30px;
-}
-
-.left{
-  float: left;
-  margin: 0 30px 50px 0;
-}
-
-.right, .left{
-  width:470px;
-  height:300px;
-  position:relative;
-  z-index: 1;
-  list-style: none;
- }
-
- .right img, .left img{
+.wrapper img{
   width: 100%;
-  height: 100%;
- }
+  height:100%;
+}
+
+/*
+-------------------------------------------------------------------------------
+                            HOVER ELEMENTS
+---------------------------------------------------------------------------------*/
 
 .down{
   display: none;
   position: absolute;
   background-color: rgb(27, 188, 155);
-  height: 70px;
+  height: 100px;
   left: 0;
   right: 0;
   bottom:-1px;
   z-index: 3;
   border-top: 7px solid rgba(27, 188, 155, .5);
+  padding-top: 15px;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  padding-top: 10px;
+
 }
 
 .up {
   display: none;
   background-color: rgb(27, 188, 155);
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
   z-index: 3;
   border: 7px solid rgba(27, 188, 155, .5);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  background-image: url('Images/search.png');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
@@ -62,22 +77,16 @@
   width:100%;
   height:100%;
   position:absolute;
-  top:0px;
-  right:0px;
   bottom: 0px;
   left: 0px;
   z-index: 2;
 }
 
 
-.right:hover .down,
-.right:hover .up,
-.right:hover .back,
-.left:hover .down,
-.left:hover .up,
-.left:hover .back
-{display:block;}
-
+.wrapper:hover .down,
+.wrapper:hover .up,
+.wrapper:hover .back{
+  display:block;}
 
 .down h1{
 font-size: 24px;
@@ -85,17 +94,13 @@ color:white;
 width: 100%;
 height: auto;
 margin-left: 20px;
-margin-bottom: 10px;
 }
 
 .down h2{
 font-size: 18px;
-color:rgb(128, 128, 128);
+color:rgb(78, 75, 75);
 width: 100%;
 height: auto;
 margin-left: 20px;
 }
 
-.clear{
-clear: both;
-}
