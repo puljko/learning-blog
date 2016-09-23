@@ -7,8 +7,6 @@
 
 */
 
-
-
 /*-------------------------------------------------------------------------------
                             1. BASIC ELEMENTS
 --------------------------------------------------------------------------------*/
@@ -28,4 +26,133 @@ html {
      content: " ";
      clear: both;
      height: 0;
+}
+
+/*-------------------------------------------------------------------------------
+                            2. NAVIGATION ELEMENTS
+--------------------------------------------------------------------------------*/
+.navigation {
+height:70px;
+text-transform: uppercase;
+list-style: none;
+}
+
+.navigation a:hover {
+  text-decoration: none;
+  }
+
+.nav_first{
+  padding: 1.7em 1em 0 0;
+}
+
+  .nav_first li a{
+    color:rgb(152, 164, 162);
+  }
+
+
+.nav_second{
+  height: 100%;
+  padding: 1.7em 25px 0 2em;
+  background: rgba(224, 222, 223,1);
+  background-size: cover;
+  background: -moz-linear-gradient(left, rgba(224, 222, 223,1) 0%, rgba(224, 222, 223,1) 16%, rgba(246,246,246,1) 16%, rgba(234, 78, 56,1) 16%, rgba(234, 78, 56,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(224, 222, 223,1)), color-stop(16%, rgba(224, 222, 223,1)), color-stop(16%, rgba(246,246,246,1)), color-stop(16%, rgba(234, 78, 56,1)), color-stop(100%, rgba(234, 78, 56,1)));
+  background: -webkit-linear-gradient(left, rgba(224, 222, 223,1) 0%, rgba(224, 222, 223,1) 16%, rgba(246,246,246,1) 16%, rgba(234, 78, 56,1) 16%, rgba(234, 78, 56,1) 100%);
+  background: -o-linear-gradient(left, rgba(224, 222, 223,1) 0%, rgba(224, 222, 223,1) 16%, rgba(246,246,246,1) 16%, rgba(234, 78, 56,1) 16%, rgba(234, 78, 56,1) 100%);
+  background: -ms-linear-gradient(left, rgba(224, 222, 223,1) 0%, rgba(224, 222, 223,1) 16%, rgba(246,246,246,1) 16%, rgba(234, 78, 56,1) 16%, rgba(234, 78, 56,1) 100%);
+  background: linear-gradient(to right, rgba(224, 222, 223,1) 0%, rgba(224, 222, 223,1) 16%, rgba(246,246,246,1) 16%, rgba(234, 78, 56,1) 16%, rgba(234, 78, 56,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbd7db', endColorstr='#e80c0c', GradientType=1 );
+  color: white;
+}
+
+  .nav_first li, .nav_second li{
+    display: inline;
+    margin-right: 1em;
+  }
+
+  .nav_second li:first-child{
+    padding-left: 1em;
+    margin-right: 5em;
+}
+
+
+/*-------------------------------------------------------------------------------
+                            3. HERO ELEMENTS
+--------------------------------------------------------------------------------*/
+.hero{
+  background-image: url('Images/back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+  position: relative;
+}
+
+.hero_over{
+position: absolute;
+background-color: rgba(32, 14, 4, 0.6);
+background-size: cover;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+padding-top: 3em;
+
+}
+  .hero h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+  }
+
+.search{
+padding: auto 2em;
+
+}
+
+  .search select{
+    -moz-appearance: none;
+    -weblit- appearance:none;
+    background-image: url('Images/arrow.png');
+    background-size: 6%;
+    background-position: 91% 53%;
+    background-repeat: no-repeat;
+    padding-right: 5px;
+    margin-bottom: 1em;
+  }
+
+    .search select:first-child{
+      margin-right: 1em;
+    }
+
+     .search select option{
+      padding-left: 1em;
+      font-size: 0.7em;
+     }
+
+.search select, .search input{
+  height: 60px;
+  width: 100%;
+  border: solid 1px rgba(128, 128, 120, 0.7);
+  border-radius: 30px;
+  padding-left: 1em;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgba(128, 128, 120, 0.1);
+}
+
+.search input{
+  margin-bottom: 1em;
+}
+
+.search_button{
+  height: 70px;
+  width: 100%;
+  border: none;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border-radius: 40px;
+  background-color: rgb(234, 78, 56);
 }
