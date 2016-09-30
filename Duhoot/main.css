@@ -71,8 +71,7 @@ list-style: none;
   }
 
   .nav_second li:first-child{
-    padding-left: 1em;
-    margin-right: 5em;
+    text-align: center;
 }
 
 
@@ -150,9 +149,268 @@ padding: auto 2em;
   height: 70px;
   width: 100%;
   border: none;
-  font-size: 23px;
+  text-transform: uppercase;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   border-radius: 40px;
   background-color: rgb(234, 78, 56);
 }
+
+/*-------------------------------------------------------------------------------
+                            4. FILTER ELEMENTS
+--------------------------------------------------------------------------------*/
+ .filter_section{
+  height: 60px;
+  text-transform: uppercase;
+ }
+
+  .filter_section ul {
+    padding-top: 20px;
+  }
+
+  .filter_section ul li{
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .filter_section ul li a{
+    color: rgb(173, 186, 187);
+    font-weight: bold;
+  }
+
+
+  .filter_section ul li a:hover{
+    color: rgb(235, 98, 79);
+    text-decoration: none;
+  }
+
+.filter_middle{
+  padding-top: 10px;
+  display: inline block;
+}
+
+.filter_select, .map_view{
+  height: 40px;
+  width: 40% !important;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(235, 98, 79);
+  padding-left: 1em;
+  border-radius: 40px;
+  border: solid 1px rgba(128, 128, 120, 0.7);
+  font-weight: bold;
+}
+
+.filter_select{
+  background-image: url('Images/arrow.png');
+  -moz-appearance: none;
+  -weblit- appearance:none;
+  background-size: 10%;
+  background-position: 90% 53%;
+  background-repeat: no-repeat;
+}
+
+.map_view{
+  padding-top: 10px;
+  background-image: url(Images/location.png);
+  background-size: 10%;
+  background-position: 85% 50%;
+  background-repeat: no-repeat;
+}
+
+  .map_view a{
+    color: rgb(173, 186, 187);
+    }
+
+    .map_view a:hover, .map_view a:active{
+      color: rgb(235, 98, 79);
+      text-decoration: none;
+    }
+
+.filter_last ul{
+  display: inline;
+  float: right;
+  padding-top: 0;
+}
+
+.filter{
+  color: rgb(173, 186, 187);
+  font-weight: bold;
+  padding-top: 20px;
+  margin: 0 20px 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.home, .people, .music, .travel, .education{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  margin-top: 10px;
+  background-color: rgb(182, 192, 193);
+  background-image: url('Images/home.png');
+  background-position: center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+  .home:hover, .home:active{
+    background-color: rgb(27, 175, 93);
+  }
+
+  .music:hover, .music:active{
+    background-color: rgb(241, 158, 31);
+  }
+
+  .travel:hover, .music:active{
+    background-color: rgb(136, 73, 156);
+  }
+
+  .education:hover, .music:active{
+    background-color: rgb(233, 78, 56);
+  }
+
+  .people:hover, .music:active{
+    background-color:  rgb(0, 66, 255);
+  }
+
+/*-------------------------------------------------------------------------------
+                            5. POST ELEMENTS
+--------------------------------------------------------------------------------*/
+
+.post_section{
+  background-color: rgb(243, 241, 242);
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.post_form{
+  background-color: white;
+  height: 300px;
+  margin: 40px 5px 0 5px;
+  border-radius: 2%;
+}
+
+.smallPost_image, .bigPost_image{
+  border-radius: 2% 2% 0 0;
+  width: 100%;
+  top: 0;
+  position: relative;
+}
+  .smallPost_image{
+    height: 50%
+  }
+
+  .bigPost_image{
+    height: 45%;
+  }
+
+
+  .smallPost_image img, .bigPost_image img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 2% 2% 0 0;
+    z-index: 1;
+  }
+
+ .post_image_cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(27, 175, 93, 0.7);
+    display: none;
+    z-index: 2;
+  }
+
+    .smallPost_image:hover .post_image_cover,
+    .bigPost_image:hover .post_image_cover{
+      display:block;
+    }
+
+.smallPost_icon, .bigPost_icon{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: solid 3px white;
+  border-radius: 50%;
+  background-color: rgb(27, 175, 93);
+  background-image: url('Images/home.png');
+  background-position: center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  margin:auto;
+  z-index: 3;
+}
+
+  .smallPost_icon{
+    bottom: -32px;
+    left: 0;
+    right: 0;
+  }
+
+  .bigPost_icon{
+    bottom: -32px;
+    left: 5%;
+  }
+
+.smallPost_footer, .bigPost_footer{
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: solid 3px rgb(27, 175, 93);
+  border-radius: 0 0 2% 2%;
+}
+
+  .smallPost_footer{
+  padding: 1.5em 1em 0 1em;
+  text-align: center;
+  height: 50%
+  }
+
+  .bigPost_footer{
+  padding: 1.5em 1em 0 1em;
+  text-align: left;
+  height: 60%
+  }
+
+
+
+  .smallPost_footer h1, .bigPost_footer h1{
+    font-size: 18px;
+  }
+
+  .smallPost_footer a, .smallPost_footer a:hover{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(27, 175, 93);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.user{
+  height: 50%;
+  width:100%;
+  height: 55%;
+  border-top: solid 3px rgb(27, 175, 93);
+}
+
+  .user a{
+    left: 5%;
+    height: 100%;
+    width: 20%;
+    top: 25%;
+    position: relative;
+
+}
+
+  .user a img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
